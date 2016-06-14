@@ -11,7 +11,12 @@
 <script type="text/javascript" src="tempete/js/jquery-1.3.1.min.js"></script>
 <script type="text/javascript" language="javascript" src="tempete/js/dropdown.class.demo.js"></script>
 <script type="text/javascript" language="javascript" src="tempete/js/layout.class.js"></script>
-<link rel="stylesheet" href="http://www.bootcss.com/p/buttons/css/buttons.css">
+<link href="tempete/assets/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="tempete/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+<link type="text/css" href="tempete/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+<link href="http://cdn.bootcss.com/prettify/r224/prettify.css" rel="stylesheet">
+
 
 </head>
 
@@ -23,7 +28,7 @@
 		<!-- logo -->
 		<img src="tempete/img/logoandre.png" alt="jQuery jDropDowns" class="logo" />
 		<!-- jDropDown menu -->
-		<ul id="jDropDown" class="blue">
+		<ul id="jDropDown" class="blue" style="margin-left:-2px;">
 			<li class="home"><a href="#">
 			<img src="tempete/img/homeIcon.png" alt="home"></a></li>
 			<li><a >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
