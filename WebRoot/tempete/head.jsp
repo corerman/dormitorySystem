@@ -32,7 +32,7 @@
 			<li class="home"><a href="#">
 			<img src="tempete/img/homeIcon.png" alt="home"></a></li>
 			<li><a >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
-			<div class="column_2" style="margin-left: 4px;">
+			<div class="column_2" style="margin-left: -12px;width:170px;">
 				<div class="column">
 					<img src="tempete/img/about.jpg" alt="about us" style="margin: 20px 0px 0px 10px;" />
 					<ul>
@@ -40,15 +40,6 @@
 						<li><a href="http://zwc.chzu.edu.cn/" target="_blank">滁州学院后勤管理处</a></li>
 					</ul>
 				</div>
-				<ul class="column">
-					<li><a href="#">公告1</a></li>
-					<li><a href="#">公告2</a></li>
-					<li><a href="#">公告3</a></li>
-					<li><a href="#">公告4</a></li>
-					<li><a href="#">公告5</a></li>
-					<li><a href="#">公告6</a></li>
-					<li><a href="#">公告7</a></li>
-				</ul>
 			</div>
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线生活&nbsp;&nbsp;</a>
