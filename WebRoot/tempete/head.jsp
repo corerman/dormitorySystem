@@ -34,9 +34,8 @@
 			<li><a >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
 			<div class="column_2" style="margin-left: -12px;width:170px;">
 				<div class="column">
-					<img src="tempete/img/about.jpg" alt="about us" style="margin: 20px 0px 0px 10px;" />
+					
 					<ul>
-						<li><a href="#">学生宿舍管理办法</a></li>
 						<li><a href="http://zwc.chzu.edu.cn/" target="_blank">滁州学院后勤管理处</a></li>
 					</ul>
 				</div>
@@ -44,11 +43,10 @@
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线生活&nbsp;&nbsp;</a>
 			<div class="column_3" style="margin-left: -20px; width:160px;">
-				<div class="column" style="height:110px;">
-					<center><img src="tempete/img/room.png" alt="about us" style="margin: 0px auto; width:60px;height:60px;" />
-					</center><span class="sectionTitle">&nbsp;</span>
+				<div class="column" >
+					
 					<ul>
-						<center><li><a href="#" style="width="160px;">寝室卫生</a></li></center>
+						<li><a href="#" style="width="160px;">寝室卫生</a></li>
 					</ul>
 				</div>
 				
@@ -56,10 +54,9 @@
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线服务&nbsp;&nbsp;</a>
 			<div class="column_3" style="margin-left: -20px; width:160px;">
-							<center><img src="tempete/img/repair.png" alt="about us" style="margin: 0px auto; width:60px;height:60px;" />
-					</center><span class="sectionTitle">&nbsp;</span>
+							
 					<ul>
-						<center><li><a href="#" style="width="160px;">在线报修</a></li></center>
+						<center><li><a href="#" >在线报修</a></li></center>
 					</ul>		
 				
 				
@@ -69,7 +66,7 @@
 			
 			</li>
 			<li><a href="#">联系方式</a>
-			<div class="column_2" style="margin-left: -202px;">
+			<div class="column_2" style="margin-left: -202px;z-index:9999">
 				<div class="column">
 					<span class="sectionTitle">我们的位置</span>
 					<br />

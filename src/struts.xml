@@ -8,8 +8,20 @@
             <result  type="json">
             	<param name="root">result</param>
             </result>
-         
         </action>
-   
+ 
+         <action name="NoticeTitleByIdSearch" class="notice.NoticeControl" method="getNoticeTitleFromBackId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action> 
+ 
+          <action name="NoticeContentByIdSearch" class="notice.NoticeControl" method="getNoticeContentFromBackId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action>  
     </package>	
 </struts>    
