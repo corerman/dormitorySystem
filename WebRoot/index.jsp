@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"   pageEncoding="utf-8"%>
+<%@page import="action.weather"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <%@ include file="tempete/head.jsp"  %>
 <div style="width:100%;height:220px;" >
@@ -8,7 +9,11 @@
 <div class="layout" style="height:380px;" >
 <div class="ui-state-error ui-corner-all">
                     <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
-                    <strong>天气预报:</strong> 天气晴,最高气温37度。</p>
+                    <strong>天气预报:</strong><% 
+                    weather w=new weather();
+                    w.getJsonFromUrl();
+                     %>
+                     <%="&nbsp;&nbsp;"+w.result %></p>
                   </div>
 		<div
 			style="position: absolute; width: 280px; height: 170px; right: 50px; top: 110px; padding: 10px;"
