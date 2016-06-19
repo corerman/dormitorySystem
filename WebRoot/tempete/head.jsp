@@ -14,10 +14,12 @@
 <link href="tempete/assets/css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" href="tempete/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
 <link type="text/css" href="tempete/assets/css/font-awesome.min.css" rel="stylesheet" />
-
+<link type="text/css" href="http://www.bootcss.com/p/flat-ui/css/flat-ui.css" rel="stylesheet" />
 <link href="http://cdn.bootcss.com/prettify/r224/prettify.css" rel="stylesheet">
 
-
+<style>
+a{ text-decoration:none; }
+</style>
 </head>
 
 <body>
@@ -29,9 +31,9 @@
 		<img src="tempete/img/logoandre.png" alt="jQuery jDropDowns" class="logo" />
 		<!-- jDropDown menu -->
 		<ul id="jDropDown" class="blue" style="margin-left:-2px;">
-			<li class="home"><a href="#">
+			<li class="home"><a href="index.jsp">
 			<img src="tempete/img/homeIcon.png" alt="home"></a></li>
-			<li><a >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<li><a href="index.jsp" >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
 			<div class="column_2" style="margin-left: -12px;width:170px;">
 				<div class="column">
 					
@@ -46,7 +48,7 @@
 				<div class="column" >
 					
 					<ul>
-						<li><a href="#" style="width="160px;">寝室卫生</a></li>
+						<li><a href="http://www.chzu.edu.cn" target="_blank" style="width="160px;">蔚园新闻</a></li>
 					</ul>
 				</div>
 				
@@ -56,7 +58,7 @@
 			<div class="column_3" style="margin-left: -20px; width:160px;">
 							
 					<ul>
-						<center><li><a href="#" >在线报修</a></li></center>
+						<li><a href="report.jsp" >在线报修</a></li>
 					</ul>		
 				
 				

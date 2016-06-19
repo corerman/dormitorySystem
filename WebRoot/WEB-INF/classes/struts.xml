@@ -23,5 +23,39 @@
             	<param name="root">result</param>
             </result>
         </action>  
+
+          <action name="LivingRoomGoodLevelFromId" class="livingRoomClean.LivingRoomCleanControl" method="getGoodLevelFromId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action>  
+           <action name="LivingRoomMidLevelFromId" class="livingRoomClean.LivingRoomCleanControl" method="getMidLevelFromId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+            </action>
+          <action name="LivingRoomBadLevelFromId" class="livingRoomClean.LivingRoomCleanControl" method="getBadLevelFromId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+            
+          </action>
+          <action name="LivingRoomFromId" class="livingRoomClean.LivingRoomCleanControl" method="getLivingRoomId" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+            </action>
+        
+           <action name="addReportInfo" class="reportControl.ReportControl" method="addReportInfo" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>   
+     
     </package>	
 </struts>    
