@@ -62,8 +62,28 @@
             <result  type="json">
             	<param name="root">result</param>
             </result>
-            
-          </action>
+  		</action>
+  		
+         <action name="editWeiSheng" class="livingRoomClean.LivingRoomCleanControl" method="editWeiSheng" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>        
+  
+          <action name="delWeiSheng" class="livingRoomClean.LivingRoomCleanControl" method="delWeisheng" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>   
+          
+           <action name="addWeisheng" class="livingRoomClean.LivingRoomCleanControl" method="addWeisheng" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>                      
           <action name="LivingRoomFromId" class="livingRoomClean.LivingRoomCleanControl" method="getLivingRoomId" >
             <!--省略Action其他配置-->
             <result  type="json">

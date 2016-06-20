@@ -3,6 +3,11 @@ package livingRoomClean;
 import livingClean.LivingClean;
 import livingClean.LivingCleanDAO;
 
+import hi.Notice;
+import hi.NoticeDAO;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +17,42 @@ public class LivingRoomCleanControl extends ActionSupport {
 	public static String result;
 	private static int listCount=0;
 	private int id;
+	private String sushelou;
+	private String goodlevel;
+	private String midlevel;
+	public String getSushelou() {
+		return sushelou;
+	}
+
+	public void setSushelou(String sushelou) {
+		this.sushelou = sushelou;
+	}
+
+	public String getGoodlevel() {
+		return goodlevel;
+	}
+
+	public void setGoodlevel(String goodlevel) {
+		this.goodlevel = goodlevel;
+	}
+
+	public String getMidlevel() {
+		return midlevel;
+	}
+
+	public void setMidlevel(String midlevel) {
+		this.midlevel = midlevel;
+	}
+
+	public String getBadlevel() {
+		return badlevel;
+	}
+
+	public void setBadlevel(String badlevel) {
+		this.badlevel = badlevel;
+	}
+
+	private String badlevel;
 	public int getId() {
 		return id;
 	}
@@ -76,6 +117,72 @@ public class LivingRoomCleanControl extends ActionSupport {
 		//setId(2);
 		result=list.get(listCount-id).getSushelou();
 		//先调用setId 在调用此函数
+		return "success";
+	}
+	
+	
+
+	
+	public String editWeiSheng() {
+		LivingCleanDAO dao=new LivingCleanDAO();
+		LivingClean clean=new LivingClean();
+		clean.setId(id);
+		clean.setSushelou(sushelou);
+		clean.setGoodlevel(goodlevel);
+		clean.setMidlevel(midlevel);
+		clean.setBadlevel(badlevel);
+		try{
+			
+			dao.getSession().beginTransaction();
+			dao.merge(clean);
+			result="success";
+			dao.getSession().beginTransaction().commit();
+			dao.getSession().clear();
+			dao.getSession().close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}	
+		return "success";
+	}
+	
+	
+	public String delWeisheng() {
+		LivingCleanDAO dao=new LivingCleanDAO();
+		LivingClean clean=new LivingClean();
+		clean.setId(id);
+		try{
+			
+			dao.getSession().beginTransaction();
+			dao.delete(clean);
+			result="success";
+			dao.getSession().beginTransaction().commit();
+			dao.getSession().clear();
+			dao.getSession().close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}	
+		return "success";
+	}
+		
+	public String addWeisheng() {
+		LivingCleanDAO dao=new LivingCleanDAO();
+		LivingClean clean=new LivingClean();
+		clean.setSushelou(sushelou);
+		clean.setGoodlevel(goodlevel);
+		clean.setMidlevel(midlevel);
+		clean.setBadlevel(badlevel);
+		clean.setId(id);
+		try{
+			
+			dao.getSession().beginTransaction();
+			dao.save(clean);
+			result="success";
+			dao.getSession().beginTransaction().commit();
+			dao.getSession().clear();
+			dao.getSession().close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}	
 		return "success";
 	}
 }

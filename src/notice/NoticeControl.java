@@ -119,7 +119,7 @@ public class NoticeControl extends ActionSupport {
 		Notice notice=new Notice();
 		notice.setId(id);
 		try{
-			System.out.println(id+" "+title+"  "+content+"  "+publicdate);
+			//System.out.println(id+" "+title+"  "+content+"  "+publicdate);
 			dao.getSession().beginTransaction();
 			dao.delete(notice);
 			result="success";
