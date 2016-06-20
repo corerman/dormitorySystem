@@ -23,7 +23,28 @@
             	<param name="root">result</param>
             </result>
         </action>  
+        
+        <action name="editNotices" class="notice.NoticeControl" method="editNotices" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action> 
 
+        <action name="delNotices" class="notice.NoticeControl" method="delNotices" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action> 
+        
+       <action name="addNotices" class="notice.NoticeControl" method="addNotices" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+        </action> 
+        
           <action name="LivingRoomGoodLevelFromId" class="livingRoomClean.LivingRoomCleanControl" method="getGoodLevelFromId" >
             <!--省略Action其他配置-->
             <result  type="json">
@@ -56,6 +77,20 @@
             	<param name="root">result</param>
             </result>
           </action>   
+ 
+            <action name="delReportInfo" class="reportControl.ReportControl" method="delReport" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>  
+          
+             <action name="LoginCheck" class="userControl.UserControl" method="loginCheck" >
+            <!--省略Action其他配置-->
+            <result  type="json">
+            	<param name="root">result</param>
+            </result>
+          </action>           
      
     </package>	
 </struts>    

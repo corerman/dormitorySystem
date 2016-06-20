@@ -75,4 +75,8 @@ $("#sendbtn").click(function(){
 });
 </script>
 
+<script>
+	document.getElementById("username").style.height="20px";
+	document.getElementById("password").style.height="20px";
+</script>
 <%@ include file="tempete/foot.jsp"  %>

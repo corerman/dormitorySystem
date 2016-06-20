@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Expires" CONTENT="0"> 
 <title>学生宿舍管理系统</title>
 <link rel="stylesheet" href="tempete/css/style.css" type="text/css" media="screen, projection" />
 <!-- menu -->
@@ -34,7 +37,7 @@ a{ text-decoration:none; }
 			<li class="home"><a href="index.jsp">
 			<img src="tempete/img/homeIcon.png" alt="home"></a></li>
 			<li><a href="index.jsp" >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
-			<div class="column_2" style="margin-left: -12px;width:170px;">
+			<div class="column_2" style="margin-left: -12px;width:170px;border-radius:5px;">
 				<div class="column">
 					
 					<ul>
@@ -44,8 +47,8 @@ a{ text-decoration:none; }
 			</div>
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线生活&nbsp;&nbsp;</a>
-			<div class="column_3" style="margin-left: -20px; width:160px;">
-				<div class="column" >
+			<div class="column_3" style="margin-left: -20px; width:160px;border-radius:5px;">
+				<div class="column"  >
 					
 					<ul>
 						<li><a href="http://www.chzu.edu.cn" target="_blank" style="width="160px;">蔚园新闻</a></li>
@@ -55,7 +58,7 @@ a{ text-decoration:none; }
 			</div>
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线服务&nbsp;&nbsp;</a>
-			<div class="column_3" style="margin-left: -20px; width:160px;">
+			<div class="column_3" style="margin-left: -20px; width:160px;border-radius:5px;">
 							
 					<ul>
 						<li><a href="report.jsp" >在线报修</a></li>
@@ -64,11 +67,19 @@ a{ text-decoration:none; }
 				
 			</div>
 			</li>
-			<li><a href="login.jsp">&nbsp;&nbsp;管理员通道&nbsp;&nbsp;</a>
-			
+			<li><a >&nbsp;&nbsp;管理员通道&nbsp;&nbsp;</a>
+				<div class="column_3" style="margin-left: -50px; width:250px;height:170px;z-index:9999;border-radius:5px;">
+					<center><form action="LoginCheck" method="post"><br />
+						用户名：<input style="width:150px;height:30px;" type="text" name="username" id="username" class="span3" />
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;密码：<input style="width:150px;height:30px;" type="password" name="password" id="password" class="span3" />
+						<input class="btn btn-large btn-block btn-danger" style="width:100px;height:35px;" type="button"  id="loginBtn" value="登录" />
+				</form>	</center>	
+						
+		
+				</div>
 			</li>
 			<li><a href="#">联系方式</a>
-			<div class="column_2" style="margin-left: -202px;z-index:9999">
+			<div class="column_2" style="margin-left: -202px;z-index:9999;border-radius:5px;">
 				<div class="column">
 					<span class="sectionTitle">我们的位置</span>
 					<br />

@@ -22,6 +22,7 @@
 		<mapping resource="hi/Notice.hbm.xml" />
 		<mapping resource="livingClean/LivingClean.hbm.xml" />
 		<mapping resource="report/Report.hbm.xml" />
+		<mapping resource="user/User.hbm.xml" />
 
 	</session-factory>
 

@@ -1,5 +1,8 @@
 package reportControl;
 
+import hi.Notice;
+import hi.NoticeDAO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,14 +16,14 @@ import com.opensymphony.xwork2.ActionSupport;
 
 
 public class ReportControl extends ActionSupport {
-	private String id;
+	private int id;
 	private String sushelou;
 	private String susheId;
 	private String reportinfo;
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int  id) {
 		this.id = id;
 	}
 	public String getSushelou() {
@@ -59,6 +62,25 @@ public class ReportControl extends ActionSupport {
 			e.printStackTrace();
 		}	
 		
+		return "success";
+	}
+	
+	public String delReport() {
+		ReportDAO dao=new ReportDAO();
+		Report report=new Report();
+		report.setId(id);
+		try{
+			System.out.println(id);
+			dao.getSession().beginTransaction();
+			dao.delete(report);
+			result="success";
+			dao.getSession().beginTransaction().commit();
+			dao.getSession().clear();
+			dao.getSession().close();
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}	
 		return "success";
 	}
 }
