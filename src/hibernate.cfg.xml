@@ -18,12 +18,13 @@
 		<property name="connection.driver_class">
 			com.mysql.jdbc.Driver
 		</property>
+	 
 		<property name="myeclipse.connection.profile">notice</property>
 		<mapping resource="hi/Notice.hbm.xml" />
 		<mapping resource="livingClean/LivingClean.hbm.xml" />
 		<mapping resource="report/Report.hbm.xml" />
 		<mapping resource="user/User.hbm.xml" />
-
+		
 	</session-factory>
 
 </hibernate-configuration>

@@ -120,11 +120,13 @@ public class NoticeControl extends ActionSupport {
 		notice.setId(id);
 		try{
 			//System.out.println(id+" "+title+"  "+content+"  "+publicdate);
+			dao.getSession().clear();
 			dao.getSession().beginTransaction();
 			dao.delete(notice);
 			result="success";
+			
 			dao.getSession().beginTransaction().commit();
-			dao.getSession().clear();
+			
 			dao.getSession().close();
 			
 		}catch(Exception e){
@@ -143,11 +145,13 @@ public class NoticeControl extends ActionSupport {
 		notice.setPublicdate(sdf.parse(publicdate)); //时间转换异常 注意
 		try{
 			System.out.println(title+"  "+content+"  "+publicdate);
+			dao.getSession().clear();
 			dao.getSession().beginTransaction();
 			dao.save(notice);
 			result="success";
+			
 			dao.getSession().beginTransaction().commit();
-			dao.getSession().clear();
+			
 			dao.getSession().close();
 			
 		}catch(Exception e){

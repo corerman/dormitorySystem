@@ -277,7 +277,7 @@ function editPost(){
             //成功返回之后调用的函数             
             success:function(data){
             	if(data.indexOf("success")!=-1)
-         			alert("修改成功");          
+         			alert("修改成功");           
             }   ,
             //调用执行后调用的函数
             complete: function(XMLHttpRequest, textStatus){
@@ -303,6 +303,7 @@ function editPost(){
 		document.getElementById("xuhao"+document.getElementById("newid").value).innerHTML=document.getElementById("newid").value;
 		document.getElementById("bad"+document.getElementById("newid").value).innerHTML=document.getElementById("newbad").value;
 		$("#editweisheng").fadeOut("slow");
+		
 	});
 	
 	function setPageVar(id){
@@ -313,7 +314,7 @@ function editPost(){
 	 $("#delete").click(function(){
 	 	 id=document.getElementById('delectid').value
 	 	 deletePost(id);
-	 	 window.location.reload();
+	 	 window.location.href="weisheng.jsp"; 
 		});
 		
 function deletePost(i){
@@ -331,7 +332,7 @@ function deletePost(i){
             //成功返回之后调用的函数             
             success:function(data){
             	if(data.indexOf("success")!=-1)
-         			alert("删除成功");          
+         			alert("删除成功");         
             }   ,
             //调用执行后调用的函数
             complete: function(XMLHttpRequest, textStatus){
@@ -344,7 +345,7 @@ function deletePost(i){
                 //请求出错处理
             }         
          });
-
+		 
   }	
   </script>
   
@@ -360,7 +361,7 @@ function deletePost(i){
 			addPost();
 		//	alert("debug add");
 			$("#addNotice").fadeOut("slow");
-			window.location.reload();
+			window.location.href="weisheng.jsp";  
 		});
 
 function addPost(){
@@ -379,7 +380,7 @@ function addPost(){
             //成功返回之后调用的函数             
             success:function(data){
             	if(data.indexOf("success")!=-1)
-         			alert("添加公告成功");          
+         			alert("添加公告成功");     
             }   ,
             //调用执行后调用的函数
             complete: function(XMLHttpRequest, textStatus){
@@ -392,7 +393,7 @@ function addPost(){
                 //请求出错处理
             }         
          });
-
+		 
   }	
   
   
