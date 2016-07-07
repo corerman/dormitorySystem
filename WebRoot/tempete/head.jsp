@@ -38,12 +38,7 @@ a{ text-decoration:none; }
 			<img src="tempete/img/homeIcon.png" alt="home"></a></li>
 			<li><a href="index.jsp" >&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
 			<div class="column_2" style="margin-left: -12px;width:170px;border-radius:5px;">
-				<div class="column">
-					
-					<ul>
-						<li><a href="http://zwc.chzu.edu.cn/" target="_blank">滁州学院后勤管理处</a></li>
-					</ul>
-				</div>
+			
 			</div>
 			</li>
 			<li><a href="#">&nbsp;&nbsp;在线生活&nbsp;&nbsp;</a>
@@ -67,16 +62,8 @@ a{ text-decoration:none; }
 				
 			</div>
 			</li>
-			<li><a >&nbsp;&nbsp;管理员通道&nbsp;&nbsp;</a>
-				<div class="column_3" style="margin-left: -50px; width:250px;height:170px;z-index:9999;border-radius:5px;">
-					<center><form action="LoginCheck" method="post"><br />
-						用户名：<input style="width:150px;height:30px;" type="text" name="username" id="username" class="span3" />
-						<br />&nbsp;&nbsp;&nbsp;&nbsp;密码：<input style="width:150px;height:30px;" type="password" name="password" id="password" class="span3" />
-						<input class="btn btn-large btn-block btn-danger" style="width:100px;height:35px;" type="button"  id="loginBtn" value="登录" />
-				</form>	</center>	
-						
-		
-				</div>
+			<li><a  href="http://210.45.165.172:8080/DormManageAdmin" target="_blank">&nbsp;&nbsp;管理员通道&nbsp;&nbsp;</a>
+
 			</li>
 			<li><a href="#">联系方式</a>
 			<div class="column_2" style="margin-left: -202px;z-index:9999;border-radius:5px;">

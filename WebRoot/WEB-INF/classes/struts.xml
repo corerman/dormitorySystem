@@ -12,7 +12,7 @@
  
          <action name="NoticeTitleByIdSearch" class="notice.NoticeControl" method="getNoticeTitleFromBackId" >
             <!--省略Action其他配置-->
-            <result  type="json">
+            <result  type="json">8
             	<param name="root">result</param>
             </result>
         </action> 
